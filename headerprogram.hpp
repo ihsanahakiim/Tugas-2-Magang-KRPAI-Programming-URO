@@ -86,5 +86,23 @@ class Robot{ //Deklarasi OOP
         int horizontal = x;
         int vertikal = y;
 };        
+void Instruction(){ // function berupa string petunjuk pengisian input
+    cout <<"\n----------PETUNJUK-------------";
+    cout <<"\nInput menerima perintah berupa:";
+    cout << "\nW untuk maju";
+    cout << "\nS untuk mundur";
+    cout << "\nD untuk ke kanan";
+    cout << "\nA untuk ke kiri";
+    cout << "\nX untuk mendeterminasi program";
+    cout << "\nKoordinat atas merupakan posisi robot";
+    cout << "\nKoordinat bawah merupakan posisi robot";
+    cout << "\n" << endl;
+}
+
+void Crash(int x, int y, int p, int q){ // posisi robot dan objek terdeteksi sensor sama
+    if(x==p || y == q){
+        cout << "~~~ROBOT MENABRAK~~~";
+    }
+}
 
 #endif
